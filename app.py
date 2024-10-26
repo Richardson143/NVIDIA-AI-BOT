@@ -679,6 +679,160 @@ def main():
 if __name__ == "__main__":
     main()
 
+st.markdown("""
+    <style>
+    /* Main container styling */
+    .main {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    /* Header styling */
+    .title-container {
+        background: linear-gradient(45deg, #2193b0, #6dd5ed);
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .main-title {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        margin-bottom: 1rem;
+    }
+
+    /* Chat container styling */
+    .chat-container {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Message styling */
+    .stTextInput>div>div>input {
+        border-radius: 25px !important;
+        border: 2px solid #e0e0e0;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .stTextInput>div>div>input:focus {
+        border-color: #2193b0;
+        box-shadow: 0 0 0 2px rgba(33, 147, 176, 0.2);
+    }
+
+    /* Button styling */
+    .stButton>button {
+        background: linear-gradient(45deg, #2193b0, #6dd5ed);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .stButton>button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Sidebar styling */
+    .css-1d391kg {
+        background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 2rem 1rem;
+    }
+
+    /* Feature cards */
+    .feature-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Creator section styling */
+    .creator-section {
+        background: linear-gradient(45deg, #141e30, #243b55);
+        color: white;
+        padding: 2rem;
+        border-radius: 15px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .social-links a {
+        color: #6dd5ed;
+        text-decoration: none;
+        margin: 0 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 0.5s ease-out;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Modified welcome section
+st.markdown("""
+    <div class="title-container animate-fade-in">
+        <h1 class="main-title">✨ Welcome to NVIDIA AI Chat Magic! ✨</h1>
+        <p style="color: white; font-size: 1.2rem;">Experience the future of AI conversation</p>
+    </div>
+
+    <div class="feature-card animate-fade-in">
+        <h2 style="color: #2193b0; margin-bottom: 1rem;">🎭 Discover Our Amazing Features</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <div class="feature-item">
+                <h3>🤖 AI Companions</h3>
+                <p>Engage with personalized AI assistants</p>
+            </div>
+            <div class="feature-item">
+                <h3>🌐 Web Integration</h3>
+                <p>Access real-time web content</p>
+            </div>
+            <div class="feature-item">
+                <h3>🖼️ Image Analysis</h3>
+                <p>Intelligent image processing</p>
+            </div>
+            <div class="feature-item">
+                <h3>🎨 Creative Control</h3>
+                <p>Customize response styles</p>
+            </div>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
 st.sidebar.markdown("---")
 st.sidebar.title("✨ About the Creator")
 st.sidebar.markdown("""
@@ -701,22 +855,3 @@ st.sidebar.markdown("""
         <br>📧 <a href="mailto:gunderichardson@gmail.com" style="color: #D44638;">Email</a>
     </div>
     """, unsafe_allow_html=True)
-
-# st.markdown("""
-#     <div style="font-family: 'Dancing Script', cursive; text-align: center; padding: 20px;">
-#         <h1 style="color: #4A90E2;">✨ Welcome to NVIDIA AI Chat Magic! ✨</h1>
-#     </div>
-    
-#     <div style="font-family: 'Dancing Script', cursive; font-size: 20px; color: #2E7D32; padding: 15px;">
-#         Discover the power of AI conversation with our enchanting features:
-        
-#         • 🎭 Engage with personalized AI companions
-#         • 🌐 Explore web content in real-time
-#         • 🖼️ Analyze and discuss images
-#         • 🎨 Control the creativity of responses
-#         • 📊 Monitor token usage
-#         • 💫 Experience context-aware chats
-        
-#             ✨ Begin your journey by entering your API key! ✨
-#     </div>
-#     """, unsafe_allow_html=True)
