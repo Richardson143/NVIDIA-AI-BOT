@@ -804,34 +804,34 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Modified welcome section
-st.markdown("""
-    <div class="title-container animate-fade-in">
-        <h1 class="main-title">✨ Welcome to NVIDIA AI Chat Magic! ✨</h1>
-        <p style="color: white; font-size: 1.2rem;">Experience the future of AI conversation</p>
-    </div>
+# st.markdown("""
+#     <div class="title-container animate-fade-in">
+#         <h1 class="main-title">✨ Welcome to NVIDIA AI Chat Magic! ✨</h1>
+#         <p style="color: white; font-size: 1.2rem;">Experience the future of AI conversation</p>
+#     </div>
 
-    <div class="feature-card animate-fade-in">
-        <h2 style="color: #2193b0; margin-bottom: 1rem;">🎭 Discover Our Amazing Features</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-            <div class="feature-item">
-                <h3>🤖 AI Companions</h3>
-                <p>Engage with personalized AI assistants</p>
-            </div>
-            <div class="feature-item">
-                <h3>🌐 Web Integration</h3>
-                <p>Access real-time web content</p>
-            </div>
-            <div class="feature-item">
-                <h3>🖼️ Image Analysis</h3>
-                <p>Intelligent image processing</p>
-            </div>
-            <div class="feature-item">
-                <h3>🎨 Creative Control</h3>
-                <p>Customize response styles</p>
-            </div>
-        </div>
-    </div>
-""", unsafe_allow_html=True)
+#     <div class="feature-card animate-fade-in">
+#         <h2 style="color: #2193b0; margin-bottom: 1rem;">🎭 Discover Our Amazing Features</h2>
+#         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+#             <div class="feature-item">
+#                 <h3>🤖 AI Companions</h3>
+#                 <p>Engage with personalized AI assistants</p>
+#             </div>
+#             <div class="feature-item">
+#                 <h3>🌐 Web Integration</h3>
+#                 <p>Access real-time web content</p>
+#             </div>
+#             <div class="feature-item">
+#                 <h3>🖼️ Image Analysis</h3>
+#                 <p>Intelligent image processing</p>
+#             </div>
+#             <div class="feature-item">
+#                 <h3>🎨 Creative Control</h3>
+#                 <p>Customize response styles</p>
+#             </div>
+#         </div>
+#     </div>
+# """, unsafe_allow_html=True)
 
 st.sidebar.markdown("---")
 st.sidebar.title("✨ About the Creator")
