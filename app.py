@@ -543,7 +543,7 @@ def main():
     # Initialize OpenAI client and ResponseManager
     client = OpenAI(
         base_url="https://integrate.api.nvidia.com/v1",
-        api_key="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"
+        api_key="YOUR API KEY HERE OR PLACE IT IN .env"
     )
     response_manager = ResponseManager(client, st.session_state.nvidia_model)
     
