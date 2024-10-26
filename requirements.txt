@@ -7,3 +7,4 @@ markdown>=3.4.3
 tiktoken>=0.5.1
 Pillow>=10.0.0
 numpy>=1.24.0
+Crawl4AI==0.3.72
